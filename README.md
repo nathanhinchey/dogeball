@@ -6,7 +6,7 @@ This is an asteroids game implemented with JavaScript and HTML canvas.
 I used [JQuery](https://github.com/jquery/jquery) and  [keymaster](https://github.com/madrobby/keymaster).
 
 ##Window scaling
-I made a [how-to guide](https://github.com/nathanhinchey/asteroids/blob/master/asteroids/canvas_size.md#making-an-html-canvas-fill-window) on making an HTML canvas fill the window.
+I made a [how-to guide](/canvas_size.md#making-an-html-canvas-fill-window) on making an HTML canvas fill the window.
 
 ##Drawing the ship
 I used some basic trigonometric functions and context#draw to draw the ship. The ship is constructed of a circle circumscribing a triangle drawn between three points. The locations for the points are calculated by:
