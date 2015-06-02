@@ -18,6 +18,9 @@
     <header>
       <h1 id="lives"></h1>
       <h1 id="score"></h1>
+      <button
+        type="button"
+        id="toggle-rainbows">Toggle Rainbow</button>
       <div id="game-over" class="hidden">
         <h1>You lose!</h1>
         <button type="button" id="restart-button">Play again?</button>
@@ -41,7 +44,6 @@
       var gameView = new window.Asteroids.GameView(game, ctx);
 
       gameView.start();
-
     </script>
   </body>
 </html>
@@ -102,14 +104,29 @@
     border-radius: 50%;
   }
 
-  #restart-button {
+  button {
     font-size: 24px;
-    background: white;
-    color: red;
     cursor: pointer;
-    border: 2px solid red;
     border-radius: 20px;
     padding: 5px 10px;
+    background: black;
+    color: white;
+    border: 2px solid white;
+    outline: none;
+  }
+
+  #restart-button {
+    background: white;
+    color: red;
+    border: 2px solid red;
+  }
+
+  #toggle-rainbows {
+    position: fixed;
+    left: 50%;
+    top: 10px;
+    width: 200px;
+    margin-left: -100px;
   }
 
   .hidden {
@@ -127,14 +144,14 @@
 }
 
   @-webkit-keyframes rainbow {
-    0% { color: #F00 !important; }
-    14% { color: #FA0 !important; }
-    28% { color: #FF0 !important; }
-    42% { color: #0F0 !important; }
-    56% { color: #06C !important; }
-    70% { color: #00F !important; }
-    84% { color: #B0D !important; }
-    100% { color: #F00 !important; }
+    0% { color: #F00; }
+    14% { color: #FA0; }
+    28% { color: #FF0; }
+    42% { color: #0F0; }
+    56% { color: #06C; }
+    70% { color: #00F; }
+    84% { color: #B0D; }
+    100% { color: #F00; }
   }
 
   @-webkit-keyframes bgRainbow {
