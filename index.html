@@ -24,11 +24,16 @@
         <h1 id="final-score"></h1>
       </div>
     </header>
-    <canvas id="game-canvas">
+    <canvas
+      id="game-canvas"
+      tabindex="1">
+      Your browser doesn't support HTML canvas. :(
+    </canvas>
 
     <script type="text/javascript">
       $("#game-canvas").attr("width", Asteroids.Game.DIM_X);
       $("#game-canvas").attr("height", Asteroids.Game.DIM_Y);
+      document.getElementById('game-canvas').focus();
 
       var ctx = document.getElementById("game-canvas").getContext("2d");
 
@@ -42,7 +47,7 @@
 </html>
 
 <style>
-  html, body{
+  html, body, button {
     border: none;
     padding: 0;
     margin: 0;
@@ -95,6 +100,16 @@
     color: #000;
     border: 2px solid #013;
     border-radius: 50%;
+  }
+
+  #restart-button {
+    font-size: 24px;
+    background: white;
+    color: red;
+    cursor: pointer;
+    border: 2px solid red;
+    border-radius: 20px;
+    padding: 5px 10px;
   }
 
   .hidden {
