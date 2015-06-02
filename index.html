@@ -26,7 +26,6 @@
     </header>
     <canvas id="game-canvas">
 
-
     <script type="text/javascript">
       $("#game-canvas").attr("width", Asteroids.Game.DIM_X);
       $("#game-canvas").attr("height", Asteroids.Game.DIM_Y);
@@ -83,7 +82,11 @@
     width: 200px;
     height: 200px;
     margin: auto;
-    margin-top: 150px;
+    margin-top: -100px;
+    margin-left: -100px;
+    position: fixed;
+    top: 25%;
+    left: 50%;
     background: #F99;
     color: #000;
   }
