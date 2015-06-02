@@ -69,26 +69,32 @@
   #score {
     display: block;
     float: right;
+    text-shadow: 0 0 2px #013;
   }
 
   #lives {
     display: block;
     float: left;
+    text-shadow: 0 0 2px #013;
   }
 
   #game-over {
+    box-sizing: border-box;
     text-align: center;
-    padding: 50px;
-    width: 200px;
-    height: 200px;
+    padding: 0;
+    padding-top: 100px;
+    width: 360px;
+    height: 360px;
     margin: auto;
-    margin-top: -100px;
-    margin-left: -100px;
+    margin-top: -180px;
+    margin-left: -180px;
     position: fixed;
-    top: 25%;
+    top: 50%;
     left: 50%;
-    background: #F99;
+    background: lightblue;
     color: #000;
+    border: 2px solid #013;
+    border-radius: 50%;
   }
 
   .hidden {
@@ -99,5 +105,31 @@
     margin: 0;
     padding: 0;
     border: none;
+  }
+
+.bgRainbow {
+    -webkit-animation: bgRainbow 30s infinite;
+}
+
+  @-webkit-keyframes rainbow {
+    0% { color: #F00 !important; }
+    14% { color: #FA0 !important; }
+    28% { color: #FF0 !important; }
+    42% { color: #0F0 !important; }
+    56% { color: #06C !important; }
+    70% { color: #00F !important; }
+    84% { color: #B0D !important; }
+    100% { color: #F00 !important; }
+  }
+
+  @-webkit-keyframes bgRainbow {
+    0% { background-color: #F00; }
+    14% { background-color: #FA0; }
+    28% { background-color: #FF0; }
+    42% { background-color: #0F0; }
+    56% { background-color: #06C; }
+    70% { background-color: #00F; }
+    84% { background-color: #B0D; }
+    100% { background-color: #F00; }
   }
 </style>
