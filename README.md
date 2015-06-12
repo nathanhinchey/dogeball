@@ -1,7 +1,8 @@
+<style>html, body, p, h1, h2, ul, li {font-family: "Comic Sans MS"}</style>
 #DOGEBALL
-[Live Version!](https://nathanhinchey.github.io/asteroids)
+[Live Version!](http://www.dogeball.space)
 
-This is an asteroids game implemented with JavaScript and HTML canvas.
+much asteroids game implemented with JavaScript and HTML canvas.
 
 I used [JQuery](https://github.com/jquery/jquery) and  [keymaster](https://github.com/madrobby/keymaster).
 
