@@ -25,7 +25,7 @@
       <h1 id="score"></h1>
       <button
         type="button"
-        id="toggle-rainbows">Toggle Rainbow</button>
+        id="toggle-rainbows">rainbow off</button>
       <div id="game-over" class="hidden">
         <h1>You lose!</h1>
         <button type="button" id="restart-button">Play again?</button>
@@ -37,7 +37,7 @@
       tabindex="1">
       Your browser doesn't support HTML canvas. :(
     </canvas>
-
+    <p class="attribution"><a href="http://www.nathanhinchey.com/" rel="author">www.nathanhinchey.com</a></p>
     <script type="text/javascript">
       $("#game-canvas").attr("width", Asteroids.Game.DIM_X);
       $("#game-canvas").attr("height", Asteroids.Game.DIM_Y);
@@ -143,11 +143,33 @@
     margin: 0;
     padding: 0;
     border: none;
+    outline: none;
   }
 
   .dogehead {
     position: absolute;
     top: -1000px;
+  }
+
+  .attribution {
+    font-size: 10px;
+    position: fixed;
+    bottom: -5px;
+    right: 5px;
+    color: white;
+    text-shadow: 0 0 0.1px darkgray;
+    font-family: sans-serif;
+  }
+
+  .attribution > a {
+    letter-spacing: 2px;
+    text-shadow: 0 0 1px lightgray;
+    text-decoration: none;
+    color: blue;
+  }
+
+  .attribution > a:hover {
+    text-decoration: underline;
   }
 
 .bgRainbow {
