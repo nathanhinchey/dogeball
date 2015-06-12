@@ -1,4 +1,4 @@
-#Asteroids
+#DOGEBALL
 [Live Version!](https://nathanhinchey.github.io/asteroids)
 
 This is an asteroids game implemented with JavaScript and HTML canvas.
